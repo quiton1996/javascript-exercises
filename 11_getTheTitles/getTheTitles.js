@@ -1,8 +1,9 @@
 const getTheTitles = function(struct) {
   let array = [];
-  for (let i = 0; i < struct.length; i++) {
-    array.push(struct[i].title);
-  }
+
+  struct.forEach(object => {
+    array.push(object.title);
+  })
 
   return array;
 };
